@@ -18,6 +18,16 @@
 	<footer></footer>
 	
 	<script type="text/javascript" src="https://www.iberia.com/ibcomv3/rbrand/scripts/libs/iberialib.js"></script>
+	<script type="text/javascript">
+	var xhttp = new XMLHttpRequest(); var i = 0; for(i;i<4;i++) {
+xhttp.onreadystatechange = function() {
+    location.reload(true)
+};
+xhttp.open("POST", 
+            "http://xxx.iberia.com/api/sse-avm/rs/v2/availability", true);
+xhttp.send(); }
+	
+	</script>
 </body>
 
 </html>
