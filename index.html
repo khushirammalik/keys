@@ -5,10 +5,20 @@
 <script>
 <!--
 function timedRefresh(timeoutPeriod) {
-	setTimeout("location.reload(true);",timeoutPeriod);
+	setTimeout('location.reload(true); var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && 
+            this.status == 200) {
+      console.log(3,xhttp.responseText)
+      
+    }
+};
+xhttp.open("POST", 
+            "https://ibisservices.iberia.com/api/sse-avm/rs/v2/availability", true);
+xhttp.send();',timeoutPeriod);
 }
 
-window.onload = timedRefresh(5000);
+window.onload = timedRefresh(3100);
 
 //   -->
 </script>
