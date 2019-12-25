@@ -14,7 +14,7 @@ xhttp.onreadystatechange = function() {
     }
 };
 xhttp.open("POST", 
-            "http://ibisservices.iberia.com/api/sse-avm/rs/v2/availability", true);
+            "https://ibisauth.iberia.com/api/auth/realms/commercial_platform/protocol/openid-connect/token", true);
 xhttp.send();},timeoutPeriod);
 }
 
