@@ -944,16 +944,8 @@ var _cf = _cf || []
         n[_ac[688]](_ac[374], a, t),
         void 0 !== n[_ac[340]] && (n[_ac[340]] = !0);
         var o = _ac[305] + bmak[_ac[63]] + _ac[516];
-        var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-       // Typical action to be performed when the document is ready:
-      // document.getElementById("demo").innerHTML = xhttp.responseText;
-    }
-};
-xhttp.open("GET", o, true);
-xhttp.send();
-        document.write(o);
+     
+       document.getElementById("myP").innerHTML = o;
         n[_ac[607]] = function() {
             n[_ac[308]] > 3 && e && e(n)
         }
