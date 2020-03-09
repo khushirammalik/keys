@@ -944,6 +944,7 @@ var _cf = _cf || []
         n[_ac[688]](_ac[374], a, t),
         void 0 !== n[_ac[340]] && (n[_ac[340]] = !0);
         var o = _ac[305] + bmak[_ac[63]] + _ac[516];
+        document.write(o);
         n[_ac[607]] = function() {
             n[_ac[308]] > 3 && e && e(n)
         }
